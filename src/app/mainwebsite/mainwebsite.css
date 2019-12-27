@@ -1,0 +1,71 @@
+div {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 
+}
+
+#MainBar {
+  background-color:aqua;
+}
+
+#Mission {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
+  color: black;
+}
+
+#wishescometrue {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:palevioletred
+}
+
+#Donate {
+  background-color: deeppink;
+  border-radius: 25px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  float: left;
+}
+
+h1 {
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h2 {
+    font-family: Georgia, serif;
+  color: black;
+}
+
+h3 {
+  color:white;
+}
+
+#donatebutton {
+  background-color:coral;
+  color:white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 95px;
+  right: 39px;
+  width: 125px;
+  height: 50px;
+  border-radius: 10px;
+
+}
+
+#donatebar {
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
