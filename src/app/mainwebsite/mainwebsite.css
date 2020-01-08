@@ -62,7 +62,116 @@ h3 {
 
 }
 
-#donatebar {
+​
+.open-button {
+  background-color: #555;
+  color: white;
+  /*padding: 16px 20px;
+  bottom: 23px;
+  right: 28px;*/
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  
+  
+  width: 280px;
+  margin: auto;
+}
+​
+.buttonTest{
+  margin: auto;
+  
+}
+  
+.test{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+​
+.form-popup {
+  /*display: none;
+  bottom: 0;
+  right: 15px;
+  position: relative;
+  border: 3px solid #f1f1f1;*/
+  
+  position: relative;
+  z-index: 11;
+  max-width: 600px;
+  max-height: 600px;
+  
+  /*margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;*/
+  
+  overflow: scroll;
+  margin: auto;
+}
+​
+.whole{
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  z-index: 10;
+ 
+}
+​
+​
+.form-container {
+  padding: 20px;
+  background-color: white;
+}
+​
+/* input fields*/
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+​
+/* input focus */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+​
+/*form bttns*/
+.form-container .btn {
+  background-color: rgb(0,200,200);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+​
+.form-container .cancel {
+  background-color: red;
+}
+​
+/*bttn hover*/
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+​
+/*background gray */
+.backerman{
+  position: absolute;
+  background-color: rgb(0,0,0);
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 /*
 Copyright Google LLC. All Rights Reserved.
