@@ -25,6 +25,62 @@ For children who don't know what the future holds, we hope to bring them hope, r
     An image is going to be here!
     </div>
 </div>
+​
+<h2>Popup Form</h2>
+<p>Sample Text</p>
+<p>Lorem Ipsum</p>
+​
+<div class="buttonTest">
+<button class="open-button" onclick="openForm()">Da form</button>
+</div>
+​
+<div class="whole" id="whole">
+ <div class="backerman" id="backerman"></div>
+ <div class="test" id="test">
+<div class="form-popup" id="myForm">
+  <!--<div class="backerman" id="backerman"></div>-->
+  <form action="/action_page.php" [formGroup]="MyForm" class="form-container">
+    <h1>Donate</h1>
+​
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+​
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	
+	<label for="dnt"><b>Donation</b></label>
+    <input type="number" placeholder="Enter Donation" name="dnt" min="0" required>
+	
+	<label for="name"><b>Child Name</b></label>
+    <input type="text" placeholder="Enter Child Name" name="child-name" required>
+​
+    <label for="psw"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="addr" required>
+	
+	<label for="dnt"><b>Payment</b></label>
+    <input type="number" placeholder="Enter Payment" name="pymt" min="0" required>
+​
+    <button type="submit" class="btn">Donate</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  </div>
+</div>
+</div>
+<div>
+<p>what</p>
+</div>
+​
+​
+<script>
+function openForm() {
+  document.getElementById("whole").style.display = "block";
+}
+​
+function closeForm() {
+  document.getElementById("whole").style.display = "none";
+}
+</script>
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
