@@ -7,9 +7,16 @@ div {
   width: 
 }
 
-
-#MainBar {
-  background-color: aqua;
+.Facts {
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
+  float: left;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 20px;
+  padding-top: 50px;
+  margin-bottom: 20px;
 }
 .welcome-bar {
   display: flex;
@@ -28,9 +35,11 @@ div {
   font-weight: bold;
   font-size: 1em;
   margin-bottom: 20px;
+ 
   
 }
 ​
+
 .button:hover,
 .button:visited:hover {
   text-transform: capitalize;
@@ -82,16 +91,16 @@ h3 {
   color:white;
 }
 
-#donatebutton {
-  background-color:coral;
-  color:white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  bottom: 95px;
-  right: 39px;
+button, .button {
   width: 125px;
   height: 50px;
   border-radius: 10px;
+  font-size: 18px;
+}
+
+#donatebutton {
+  color:white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -178,7 +187,6 @@ h3 {
 ​
 /*form bttns*/
 .form-container .btn {
-  background-color: rgb(0,200,200);
   color: white;
   padding: 16px 20px;
   border: none;
