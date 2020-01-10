@@ -7,9 +7,43 @@ div {
   width: 
 }
 
+
 #MainBar {
-  background-color:aqua;
+  background-color: aqua;
 }
+.welcome-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 50px;
+  background-color: gold;
+  width: 50%;
+  height: 300px;
+  border-radius: 25px;
+
+}
+​
+.welcome-bar p {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 20px;
+  
+}
+​
+.button:hover,
+.button:visited:hover {
+  text-transform: capitalize;
+  background-color: #F4BBB1;     /* Light yellow */
+}
+​
+.button:active,
+.button:visited:active {
+  text-transform: capitalize;
+  background-color: #EEB75A;     /* Yellow */
+}
+​
+​
 
 #Mission {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -26,11 +60,11 @@ div {
 #Donate {
   background-color: deeppink;
   border-radius: 25px;
-  width: 200px;
   height: 300px;
   margin: 10px;
   position: relative;
   float: left;
+  width: 45%;
 }
 
 h1 {
@@ -53,7 +87,6 @@ h3 {
   color:white;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  position: absolute;
   bottom: 95px;
   right: 39px;
   width: 125px;
