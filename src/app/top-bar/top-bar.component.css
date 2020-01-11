@@ -2,6 +2,24 @@ button {
   background-color: aqua;
 }
 
+.navbar{
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 18px;
+}
+
+.navbar a:hover{
+  color:rgb(64,64,64);
+}
+
+
 h1 {
   font-family:cursive;
 }
