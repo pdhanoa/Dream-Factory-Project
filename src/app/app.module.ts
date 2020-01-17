@@ -8,6 +8,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './mainwebsite/product-list.component';
 import { ReferralPageComponent } from './referral-page/referral-page.component';
 import { DonationPageComponent } from './donation-page/donation-page.component';
+import { WaysToHelpComponent } from './ways-to-help-page/ways-to-help.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { EventsComponent } from './events/events.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   imports: [
@@ -17,7 +21,11 @@ import { DonationPageComponent } from './donation-page/donation-page.component';
       { path: '', component: ProductListComponent },
       {path: "waystohelp/referral"
     , component: ReferralPageComponent},
-      {path: "waystohelp/donation", component: DonationPageComponent}
+      {path: "waystohelp/donation", component: DonationPageComponent},
+      {path: "waystohelp", component: WaysToHelpComponent},
+      {path: "about", component: AboutUsComponent},
+      {path: "events", component: EventsComponent}, 
+      {path: "contactus", component: ContactUsComponent}
     ])
   ],
   declarations: [
@@ -25,7 +33,11 @@ import { DonationPageComponent } from './donation-page/donation-page.component';
     TopBarComponent,
     ProductListComponent,
     ReferralPageComponent,
-    DonationPageComponent
+    DonationPageComponent,
+    WaysToHelpComponent,
+    AboutUsComponent,
+    EventsComponent,
+    ContactUsComponent
   ],
   bootstrap: [ AppComponent ]
 })
