@@ -1,0 +1,29 @@
+h1 {
+  font-family: Lato;
+  text-align: center;
+}
+
+input{
+  margin-right: 10px;
+}
+
+.qual{
+  margin: 5px;
+  padding: 10px;
+  background-color:#8CD9F5
+}
+
+form{
+  background-color: #8CAAF5;
+  margin: 5px;
+  padding: 10px;
+}
+
+#childDream{
+  width: 20%;
+  height: 40%;
+}
+
+#sPhone{
+  width: 20%;
+}
