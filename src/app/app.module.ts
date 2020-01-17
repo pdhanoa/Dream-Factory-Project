@@ -15,8 +15,9 @@ import { DonationPageComponent } from './donation-page/donation-page.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      {path: 'waystohelp/referral', component: ReferralPageComponent},
-      {path: 'waystohelp/donation', component: DonationPageComponent}
+      {path: "waystohelp/referral"
+    , component: ReferralPageComponent},
+      {path: "waystohelp/donation", component: DonationPageComponent}
     ])
   ],
   declarations: [
