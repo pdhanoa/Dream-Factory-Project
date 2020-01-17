@@ -6,6 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './mainwebsite/product-list.component';
+import { ReferralPageComponent } from './referral-page/referral-page.component';
+import { DonationPageComponent } from './donation-page/donation-page.component';
 
 @NgModule({
   imports: [
@@ -13,12 +15,16 @@ import { ProductListComponent } from './mainwebsite/product-list.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      {path: 'waystohelp/referral', component: ReferralPageComponent},
+      {path: 'waystohelp/donation', component: DonationPageComponent}
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    ReferralPageComponent,
+    DonationPageComponent
   ],
   bootstrap: [ AppComponent ]
 })
