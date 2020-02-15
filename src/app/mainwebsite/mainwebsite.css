@@ -1,229 +1,106 @@
-div {
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+​
+.page {
+  margin-top: 50px; 
+  width: auto;
+}
+​
+.top-block {
+  height: 50%;
+  background-color: rgba(133,199,202); 
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+​
+.top-block p {
+  font-weight: bold;
+}
+​
+.top-block-info {
+  padding:50px;
+  width: 25%;
+}
+​
+.top-block-info .slogan {
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+​
+.button-bar{
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+​
+/* .big-image {
+​
+} */
+​
+​
+.intro-block{
+  height: 50%;
+  background-color: rgba(254,241,173);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+}
+.intro-block-text p {
+  font-weight: bold;
+}
+​
+.intro-block-info {
+  padding:50px;
+  width: 50%;
+}
+​
+.intro-block-text {
+  width: 50%;
+}
+
+.intro-block-info * {
+
+
+  color: black;
+}
+
+.intro-block-info, .cards, .card, .card-text {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
 }
 
 
-.Facts {
-  height: 200px;
-  border-radius: 100px;
-  background-color: white;
-  border: 3px solid blue;
-  color: blue;
-  float: left;
-  width: 200px;
-  font-size: 20px;
-  margin-left: 20px;
-  padding-top: 50px;
-  margin-bottom: 20px;
+
+
+​
+.intro-block-info h1 {
+  text-transform: uppercase;
 }
-.welcome-bar {
+​
+.intro-block-info .cards {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+​
+.intro-block-info .cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  margin-bottom: 50px;
-  background-color: gold;
-  width: 50%;
-  height: 300px;
-  border-radius: 25px;
-
-}
-​
-.welcome-bar p {
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 20px;
- 
+  /* justify-content: flex-end; */
   
+  height: 33%;
+  width: 30%;
+  background-color: #FFF;
+  box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
-
-
-
-
-.button:hover,
-.button:visited:hover {
-  text-transform: capitalize;
-  background-color: #F4BBB1;     /* Light yellow */
-}
-​
-.button:active,
-.button:visited:active {
-  text-transform: capitalize;
-  background-color: #EEB75A;     /* Yellow */
-}
-​
-​
-
-#Mission {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style:italic;
-  color: black;
-}
-
-#wishescometrue {
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color:palevioletred
-}
-
-#Donate {
-  background-color: rgba(255, 82, 174, 0.966);
-  border-radius: 25px;
-  height: 300px;
-  margin: 10px;
-  position: relative;
-  float: left;
-  width: 45%;
-}
-
-h1 {
-  color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-h2 {
-    font-family: Georgia, serif;
-  color: black;
-}
-
-h3 {
-  color:white;
-}
-
-button, .button {
-  width: 125px;
-  height: 50px;
-  border-radius: 10px;
-  font-size: 18px;
-    background-color: orange;
-    color: white;
-    border: 2px white solid;
-}
-
-#donatebutton {
-  color:white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-​
-.open-button {
-  background-color: #555;
-  color: white;
-  /*padding: 16px 20px;
-  bottom: 23px;
-  right: 28px;*/
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  
-  
-  width: 280px;
-  margin: auto;
-}
-​
-.buttonTest{
-  margin: auto;
-  
-}
-  
-.test{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  
-}
-​
-.form-popup {
-  /*display: none;
-  bottom: 0;
-  right: 15px;
-  position: relative;
-  border: 3px solid #f1f1f1;*/
-  
-  position: relative;
-  z-index: 11;
-  max-width: 600px;
-  max-height: 600px;
-  
-  /*margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;*/
-  
-  overflow: scroll;
-  margin: auto;
-}
-​
-.whole{
-  display: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  bottom: 0px;
-  z-index: 10;
- 
-}
-​
-​
-.form-container {
-  padding: 20px;
-  background-color: white;
-}
-​
-/* input fields*/
-.form-container input[type=text], .form-container input[type=password], .form-container input[type=number] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-​
-/* input focus */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=number]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-​
-/*form bttns*/
-.form-container .btn {
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-​
-.form-container .cancel {
-  background-color: red;
-}
-​
-/*bttn hover*/
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-​
-/*background gray */
-.backerman{
-  position: absolute;
-  background-color: rgb(0,0,0);
-  opacity: 0.3;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
