@@ -76,6 +76,11 @@ body {
 .who-text,.contact-text{
 	margin-left:5%;
 }
+
+#who{
+  color: black;
+  font-weight: bold;
+}
 .who-text{
 	max-width: 47%;
 }
@@ -95,6 +100,12 @@ body {
 
 h2 {
   font-family: 'Courier New', Courier, monospace;
+}
+
+#contact {
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-dive{

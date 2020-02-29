@@ -9,14 +9,6 @@
 <body>
 <img src="dreamFactoryLogo.jpg" alt="Dream Factory Logo" id="dFLogo">
 <div class="bar">
-<button onclick="window.location.href = 'https://w3docs.com';">Home</button>
-<button onclick="window.location.href = 'https://w3docs.com';">About Us</button>
-<button onclick="window.location.href = 'https://w3docs.com';">Want to Help?</button>
-<button onclick="window.location.href = 'https://w3docs.com';">Events</button>
-<button onclick="window.location.href = 'https://w3docs.com';">Contact Us</button>
-<button onclick="window.location.href = 'https://w3docs.com';">Donate</button>
-</div>
-
 <div class="image-div">
 <img src="https://thumbs.dreamstime.com/z/child-running-beach-summer-vacation-happy-kid-playing-beach-sunset-time-boy-striped-t-shirt-seaside-120761177.jpg">
 </div>
@@ -32,13 +24,47 @@
 </div>
 
 
-<div class="who-text">
+<div class = "who-text">
 <h2>Who we are</h2>
-<p>As children, we are all big dreamers. We've all had wishes we hope to be granted from visiting DisneyLand to meeting our heroes. At some point, if we're fortunate enough, we get our wishes granted. However, for children who struggle with critical or chronic illnesses, the road may be too short or difficult for them to see their dreams come true. Our mission is to grant hopeful children with critical illnesses their wishes so that we can bring a little ray of light and hope into their lives.</p>
+<p id = "who">As children, we are all big dreamers. We've all had wishes we hope to be granted from visiting DisneyLand to meeting our heroes. At some point, if we're fortunate enough, we get our wishes granted. However, for children who struggle with critical or chronic illnesses, the road may be too short or difficult for them to see their dreams come true. Our mission is to grant hopeful children with critical illnesses their wishes so that we can bring a little ray of light and hope into their lives.</p>
 </div>
 
 
 <div class="contact-text">
 <h2>Contact</h2>
-<p>We would love to hear from you!<br/>Please fill out this form and we will get in touch with you shortly</p>
+<p id = "contact">We would love to hear from you!<br/>Please fill out this form and we will get in touch with you shortly</p>
 </div>
+
+
+<div class="whole" id="whole">
+ <div class="backerman" id="backerman"></div>
+ <div class="test" id="test">
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container" [formGroup] = "myForm">
+    <h1>Donate</h1>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	
+	<label for="dnt"><b>Donation</b></label>
+    <input type="number" placeholder="Enter Donation" name="dnt" min="0" required>
+	
+	<label for="name"><b>Child Name</b></label>
+    <input type="text" placeholder="Enter Child Name" name="child-name" required>
+
+    <label for="psw"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="addr" required>
+	
+	<label for="dnt"><b>Payment</b></label>
+    <input type="number" placeholder="Enter Payment" name="pymt" min="0" required>
+
+    <button type="submit" class="btn">Donate</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  </div>
+</div>
+</div>
+<div>
