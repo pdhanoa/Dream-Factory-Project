@@ -9,6 +9,49 @@
   width: auto;
 }
 
+.navbar {
+  width: 100%;
+  background-color:white;
+  box-sizing: content-box;
+  height: 10%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  z-index: 5;
+}
+
+
+.navbar a {
+  box-sizing: content-box;
+  text-decoration: none;
+  float: left;
+  color: black;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#logo {
+  box-sizing: border-box;
+  grid-column-start: 1;
+  max-height: 150px;
+  max-width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.5%;
+  place-self: center center;
+
+}
+
+.links {
+  grid-column-start: 2;
+  place-self: end right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .top-block {
   height: 50%;
