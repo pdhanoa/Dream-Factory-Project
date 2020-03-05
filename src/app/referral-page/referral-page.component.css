@@ -1,6 +1,39 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   font-family: Lato;
   text-align: center;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#referralcheck {
+
+  margin-left: 10px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#qualifications {
+  background-color: purple;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 2.0;
+  color: white;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ContactLink {
+  color: white;
 }
 
 input{

@@ -6,20 +6,26 @@
 <h1>Refer a Child</h1>
 
 
-<div class = "qual">
-  <h2>Qualifications for Referring a Child</h2>
 
 
+<div id = "qualifications">
+    <h2>Qualifications for Referring a Child</h2>
   <ul>
     <li>Child must be between the ages of 3 and 18</li>
     <li>Child must have a qualifying critical or chronic illness that is verifiable by a physician</li>
     <li>Child has never had a dream granted from any wish-granting organization</li>
     <li>Child’s dream must be his or her own (not that of a parent, guardian, etc.)</li>
     <li>Child must be able to directly communicate his or her own dream to the Dream Factory</li>
+    
   </ul>
-
-  <p>Questions? Please Contact Us <a href="#Contact">here</a></p>
+   <input type = "checkbox" name = "iunderstandcheck" id = "referralcheck">
+   <label for = "iunderstandcheck">I understand these conditions and want to refer my child.</label>
+  <p>Questions? Please Contact us <a href="#Contact" id = "ContactLink">here!</a></p>
 </div>
+   
+  
+
+  
 
 
 <form [formGroup] = "myForm">
