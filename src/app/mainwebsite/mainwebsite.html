@@ -1,168 +1,77 @@
-
-
-    <div class = "navbar">
-      <img id = "logo" src = "https://i.imgur.com/lRNNJFE.png">
-      <div class = "links">
-        <a id = "about" href = "#About" routerLink = "/about">About</a>
-        <a id = "events" href = "#Events" routerLink = "/events">Events</a>
-        <a id = "contact" href = "#Contact" routerLink = "/contact">Contact Us</a>
-        <a id = "volunteer" href = "#Volunteer" routerLink = "/volunteer">Volunteer</a>
-        <a id = "child" href = "#" routerLink = "/referral">Refer a Child</a>
-        <button id = "donate" class = "button" href = "Donate" routerLink = "/donate">Donate</button>
-      </div>
-    </div>
-    <div class = "top-block">
-      <div class = "top-block-info">
-          <p class = "slogan"> Granting wishes in St. Louis since 1983</p>
-            <h1>Welcome to the Dream Factory, where children's wishes come true</h1>
-            <p>For children who don't konw what the future holds, we hope to bring hope, relief, and happy memories </p>
-            
-          <div class = "button-bar">
-            <a class = "button"> <p>Donate</p></a>
-            <a class = "button special-button"><p>Refer a Child</p></a>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Saint Louis Dream Factory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page">
+      <div class="slideshow">
+        <div class="slideshow-imgs">
+          <div class="mySlides fade">
+            <!-- <img src="assets/mainpage/blue.png"> -->
+            <img src="https://i.imgur.com/7GBDaDn.png">
           </div>
-      </div>
-  </div>
-​<div class="page">
-  <div class = "slideshow">
-    <div class = "slideshow-imgs">
-      <div class = "mySlidesFade">
-        <img src = "https://live.staticflickr.com/4456/37431021120_4b6267bc66_b.jpg">
-      </div>
-      <div class = "mySlidesFade">
-        <img src = "https://live.staticflickr.com/8580/16645403371_386367daea_b.jpg">
-      </div>
-      <div class = "mySlidesFade">
-        <img src - "https://live.staticflickr.com/1/2478818_18f67c69dd_o.jpg">
-    </div>
-    </div>
-  </div>  
-
-  <div class = "top-block">
-    <div class = "top-box">
-      <div class = "intro-block-text">
-        <p id = "slogan">Our  mission is to grant 100 dreams every year to children between the ages of 3-18 to bring them smiles and memories they hold to their hearts. The help of volunteers and donors is always greatly appreciated </p>
-        <h1>Welcome to the Dream Factory, where children's wishes come true!</h1>
-        <p id = "future">For children who don't know where the future holds, we hope to bring hope, relief, and happy memories</p>
-    </div>
-      <div class = "cards">
-        <div class =  "card"> 
-          <img class = "card-img"/>
-          <p class = "card-subtitle">volunteer</p>
-          <p class = "card-text">Connect with a network  of volunteers on  a chapter or national level.</p>
-        </div>
-        <div class =  "card">
-          <img class = "card-img"/>
-          <p class = "card-subtitle">donate</p>
-          <p class = "card-text">Become a dream maker today. We welcome all levels of support.</p>
-        </div>
-        <div class =  "card">
-          <img class = "card-img"/>
-          <p class = "card-subtitle">refer a child</p>
-          <p class = "card-text">We strive for hope and happiness by making dreams come true.</p>
+          <div class="mySlides fade">
+            <!-- <img src="./assets/mainpage/green.png"> -->
+            <img src="https://i.imgur.com/XGi5XJf.png">
+          </div>
+          <div class="mySlides fade">
+            <!-- <img src="./assets/mainpage/blue.png" style="width:100%"> -->
+            <img src="https://i.imgur.com/znAMyhP.png">
+          </div>
         </div>
       </div>
+      <div class = "top-block" >
+        <div class = "top-box">
+          <p id = "slogan"> Granting wishes in St. Louis since 1983</p>
+          <h1>Welcome to the Dream Factory, where children's wishes come true!</h1>
+          <p id="future">For children who don't know what the future holds, we hope to bring hope, relief, and happy memories.</p>
+        </div>
+        <div class = "button-bar">
+          <div class="buttons">
+            <button id = "b1" class = "button"> Donate</button>
+            <button id = "b2" class = "button special-button">Refer a Child</button>
+          </div>
+          <div class="dots">
+            <span class="dot active" onclick=""></span>
+            <span class="dot active" onclick=""></span>
+            <span class="dot active" onclick=""></span>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <script type = "text/javascript">
-    var slideIndex = 0;
-    showSlides();
-      function showSlides() {
-        console.log("start: " + slideIndex);
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-
-        console.log(dots);
-        for(i = 0; i < slides.length; i++){
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-
-        if(slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for(i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace("active", "");
-        }
-
-        console.log(slideIndex);
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += "active";
-        setTimeout(showSlides, 5000);
-      }
-  </script>
-​
-  <!-- <div class="welcome-bar">
-    <h2>Granting Wishes to Children in the St. Louis area since 1983</h2>
-    <h1>Welcome to the Dream Factory, where we make children's wishes come true!</h1>
- 
-    <p id = "Mission">For children who don't know what the future holds, we hope to bring them hope, relief, and happy memories to keep with them.</p>
-    <p id = "About Us"> We hope to grant 100 dreams per year and give children smiles and memories to hold to their hearts. Here are some cool things we've done recently!
-    </p>
-  </div>
-  <div class="fact-bar">
-    <p class = "Facts" id = "facts1"> We grant dreams to struggling children from the ages of 3-18</p>
-    <p class = "Facts" id = "facts2">We hope to grant 100 dreams per year</p>
-    <p class = "Facts" id = "facts3">We welcome the help of volunteers and donors</p>
-  </div>
-  <div class = "helpbar">
-    <div class = "Donate">
-      <h3>Make a Child's Wish Come True Today!</h3>
-      <a class="button" [title] = "Donate" routerLink = "/waystohelp/donation">DONATE</a>
+      <div class = "intro-block">
+        <div class = "intro-box">
+          <div class = "intro-box-text">
+            <h1>Who we are</h1>
+            <p>Our  mission is to grant 100 dreams every year to children between the ages of 3-18 to bring them smiles and memories they hold to their hearts. The help of volunteers and donors is always greatly appreciated. </p>
+          </div>
+          <div class = "cards">
+            <div class =  "card">
+              <!-- <img class = "card-img" src="assets/mainpage/star.png" height="75" width="75"/> -->
+              <img class = "card-img" src="https://i.imgur.com/ShRaKtZ.png" height="75" width="75"/>
+              <p class = "card-subtitle">volunteer</p>
+              <p class = "card-text">Connect with a network  of volunteers on  a chapter or national level.</p>
+            </div>
+            <div class =  "card">
+              <!-- <img class = "card-img" src="gift.png" height="75" width="75"/> -->
+              <img class = "card-img" src="https://i.imgur.com/cII7Z6f.png" height="75" width="75"/>
+              <p class = "card-subtitle">donate</p>
+              <p class = "card-text">Become a dream maker today. We welcome all levels of support.</p>
+            </div>
+            <div class =  "card" id="child-post">
+              <!-- <img class = "card-img" id="child-img" src="child.png"/> -->
+              <img class = "card-img" id="child-img"  src="https://i.imgur.com/W6q3ZKw.png"/>
+              <p class = "card-subtitle">refer a child</p>
+              <p class = "card-text">We strive for hope and happiness by making dreams come true.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="welcome-bar">
-      <h3>GRANTING DREAMS IS OUR MISSION. SMILING CHILDREN ARE OUR VISION</h3>
-      <a class="button" [title] = "Referral" routerLink = "/waystohelp/referral" > REFER A CHILD</a>
-    </div>
-  </div>
-  <div class="main-bar">
-      <div class="info-block">
-              <img src="temp-images/mochi.gif" class="info-img" alt="">
-              <p class="info-subtitle">subtitle</p>
-              <p class="info-maintext">yo</p>
-          </div>
-      <div class="info-block">
-            <img src="temp-images/mochi.gif" class="info-img" alt="">
-            <p class="info-subtitle">subtitle</p>
-            <p class="info-maintext">hey</p>
-          </div>
-      <div class="info-block">
-            <img src="temp-images/mochi.gif" class="info-img" alt="">
-            <p class="info-subtitle">subtitle</p>
-            <p class="info-maintext">hi</p>
-          </div>
-        </div> -->
-</div>
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+    <script type="text/javascript">
+     
+    </script>
+  </body>
+</html>

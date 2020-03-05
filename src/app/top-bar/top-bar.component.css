@@ -1,0 +1,110 @@
+* {
+  font-size: 16px;
+}
+
+.navbar {
+  width: 100%;
+  /* position: fixed; */
+  background-color: white;
+  height: 10%;
+  box-sizing: content-box;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 400px 1fr ;
+  /* padding-bottom: 10px; */
+  /* border: 1px solid red; */
+  z-index: 5;
+}
+
+.navbar a {
+  box-sizing: content-box;
+  text-decoration: none;
+  float: left;
+  color:black;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+
+.navbar a:hover{
+  color:rgb(64,64,64);
+  border-bottom: 2px solid #E51770;
+}
+
+#logo {
+  box-sizing: border-box;
+  grid-column-start: 1;
+  max-height: 150px;
+  max-width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.5%;
+  align-self: center;
+  justify-self: center;
+}
+
+.links {
+  grid-column-start: 2;
+  align-self: end;
+  justify-self: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#about {
+padding-left: 25px;
+padding-right: 25px;
+display: inline;
+
+
+}
+
+#events {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#contact {
+  padding-left: 25px;
+  padding-right: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+#volunteer {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#child {
+  padding-left: 25px;
+  padding-right: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#donate {
+  margin-left: 25px;
+  margin-top: 15px;
+  grid-column-start: 2;
+  align-self: end;
+  justify-self: start;
+ 
+}
+
+.button{
+  width: 120px;
+  height: 40px;
+  margin-right: 25px;
+  color: white;
+  font-weight: 600;
+  background-color: #f2008d;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}

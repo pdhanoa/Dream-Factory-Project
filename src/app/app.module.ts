@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './mainwebsite/product-list.component';
 import { ReferralPageComponent } from './referral-page/referral-page.component';
 import { DonationPageComponent } from './donation-page/donation-page.component';
@@ -35,7 +36,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     WaysToHelpComponent,
     AboutUsComponent,
     EventsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    TopBarComponent
   ],
   bootstrap: [ AppComponent ]
 })
