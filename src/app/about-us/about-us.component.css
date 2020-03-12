@@ -1,18 +1,12 @@
-
-
+@font-face {
+  font-family: Poppins;
+  src: 'https://fonts.googleapis.com/css?family=Poppins' format("opentype");
+}
 
 * {
   box-sizing: border-box;
-}
-
-
-.form-container .btn-sbmt:hover {
-  opacity: 1;
-}
-.img-text{
-	font-size: 2vw;
-	margin-top: -60%;
-	margin-left: 10%;
+  color: black;
+  font-family: "Poppins", Arial;
 }
 
 .form-container {
@@ -20,13 +14,9 @@
   background-color: white;
 }
 
-
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 /* input fields*/
 .form-container input[type=text], .form-container input[type=password], .form-container input[type=number], .form-container input[type=email], .form-container textarea {
+  min-width: 200px;
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -34,7 +24,8 @@ body {
   background: white;
 }
 .form-container input[type=tel]{
-  width: 30%;
+  min-width: 110px;
+  width: 40%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: 1px solid;
@@ -60,7 +51,7 @@ body {
 }
 
 
-
+/*
 
 #dFLogo{
 	height: 50px;
@@ -71,15 +62,11 @@ body {
 	display: inline;
 }
 
-
+*/
 
 .who-text,.contact-text{
 	margin-left:5%;
-}
-
-#who{
-  color: black;
-  font-weight: bold;
+  min-width: 50%;
 }
 .who-text{
 	max-width: 47%;
@@ -87,33 +74,19 @@ body {
 .contact-text{
 	max-width: 20%;
 }
-
-
-#FoundingParagraph{
-
-  color: aqua;
-  text-align: center;
-  font-size: 150%;
-  margin-top: 50%;
-  font-family: "Poppins", Arial;
+.middle-text{
+	text-align: center;
+	margin-top: 45%;
+  
 }
-
-h2 {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-#contact {
-  color: black;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.image-dive{
+.image-div{
 	max-height: 20%;
 }
 .image{
 	max-height: 50%;
 	width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 .contact-text,.q-form{
 	display: inline-block;
@@ -140,3 +113,18 @@ h2 {
 	max-width: 40%;
 }
 */
+#image-text{
+  color: white;
+}
+#mid-text{
+  color: rgb(3,219,252);
+  font-size: 110%;
+}
+.form-container .btn-sbmt:hover {
+  opacity: 1;
+}
+.img-text{
+	font-size: 2vw;
+	margin-top: -50%;
+	margin-left: 10%;
+}
