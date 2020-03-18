@@ -12,6 +12,10 @@ import { WaysToHelpComponent } from './ways-to-help-page/ways-to-help.component'
 import { AboutUsComponent } from './about-us/about-us.component';
 import { EventsComponent } from './events/events.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ReferralgeninfoComponent } from './referral-page/referralgeninfo/referralgeninfo.component';
+import { ReferralaboutchildComponent } from './referral-page/referralaboutchild/referralaboutchild.component';
+import { ReferralcontactinfoComponent } from './referral-page/referralcontactinfo/referralcontactinfo.component';
+import { ReferralreferrerinfoComponent } from './referral-page/referralreferrerinfo/referralreferrerinfo.component';
 
 @NgModule({
   imports: [
@@ -25,7 +29,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       {path: "waystohelp", component: WaysToHelpComponent},
       {path: "about", component: AboutUsComponent},
       {path: "events", component: EventsComponent}, 
-      {path: "contactus", component: ContactUsComponent}
+      {path: "contactus", component: ContactUsComponent},
+      {path: "referral/generalinfo", component: ReferralgeninfoComponent},
+      {path: "referral/aboutChild", component: ReferralaboutchildComponent},
+      {path: "referral/contactInfo", component: ReferralcontactinfoComponent},
+      {path: "referral/referrerInfo", component: "ReferralreferrerinfoComponent"},
     ])
   ],
   declarations: [
@@ -37,7 +45,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AboutUsComponent,
     EventsComponent,
     ContactUsComponent,
-    TopBarComponent
+    TopBarComponent,
+    ReferralgeninfoComponent,
+    ReferralaboutchildComponent,
+    ReferralcontactinfoComponent,
+    ReferralreferrerinfoComponent
   ],
   bootstrap: [ AppComponent ]
 })
