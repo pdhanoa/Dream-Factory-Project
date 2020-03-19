@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './mainwebsite/product-list.component';
@@ -26,7 +25,7 @@ import { ReferralGenInfoComponent } from './referral-gen-info/referral-gen-info.
       {path: "about", component: AboutUsComponent},
       {path: "events", component: EventsComponent}, 
       {path: "contactus", component: ContactUsComponent},
-      {path: "waystohelp/referral/geninfo", component: ReferralGenInfoComponent},
+      {path: "geninfo", component: ReferralGenInfoComponent},
     ])
   ],
   declarations: [
