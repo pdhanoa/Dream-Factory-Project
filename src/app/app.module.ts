@@ -12,6 +12,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { EventsComponent } from './events/events.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ReferralGenInfoComponent } from './referral-gen-info/referral-gen-info.component';
+import { MyComponentComponent } from './my-component/my-component.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ReferralGenInfoComponent } from './referral-gen-info/referral-gen-info.
       {path: "events", component: EventsComponent}, 
       {path: "contactus", component: ContactUsComponent},
       {path: "geninfo", component: ReferralGenInfoComponent},
+      {path: "mycomponent", component: MyComponentComponent}
     ])
   ],
   declarations: [
@@ -39,6 +41,7 @@ import { ReferralGenInfoComponent } from './referral-gen-info/referral-gen-info.
     ContactUsComponent,
     TopBarComponent,
     ReferralGenInfoComponent,
+    MyComponentComponent,
   ],
   bootstrap: [ AppComponent ]
 })
