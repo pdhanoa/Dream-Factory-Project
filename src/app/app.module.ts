@@ -12,6 +12,7 @@ import { WaysToHelpComponent } from './ways-to-help-page/ways-to-help.component'
 import { AboutUsComponent } from './about-us/about-us.component';
 import { EventsComponent } from './events/events.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ReferralGenInfoComponent } from './referral-gen-info/referral-gen-info.component';
 
 @NgModule({
   imports: [
@@ -19,13 +20,13 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      {path: "waystohelp/referral"
-    , component: ReferralPageComponent},
+      {path: "waystohelp/referral", component: ReferralPageComponent},
       {path: "waystohelp/donation", component: DonationPageComponent},
       {path: "waystohelp", component: WaysToHelpComponent},
       {path: "about", component: AboutUsComponent},
       {path: "events", component: EventsComponent}, 
       {path: "contactus", component: ContactUsComponent},
+      {path: "waystohelp/referral/geninfo", component: ReferralGenInfoComponent},
     ])
   ],
   declarations: [
@@ -38,6 +39,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     EventsComponent,
     ContactUsComponent,
     TopBarComponent,
+    ReferralGenInfoComponent,
   ],
   bootstrap: [ AppComponent ]
 })
