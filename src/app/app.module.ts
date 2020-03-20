@@ -20,13 +20,13 @@ import { MyComponentComponent } from './my-component/my-component.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      {path: "geninfo", component: ReferralGenInfoComponent},
       {path: "waystohelp/referral", component: ReferralPageComponent},
       {path: "waystohelp/donation", component: DonationPageComponent},
       {path: "waystohelp", component: WaysToHelpComponent},
       {path: "about", component: AboutUsComponent},
       {path: "events", component: EventsComponent}, 
       {path: "contactus", component: ContactUsComponent},
-      {path: "geninfo", component: ReferralGenInfoComponent},
       {path: "mycomponent", component: MyComponentComponent}
     ])
   ],
