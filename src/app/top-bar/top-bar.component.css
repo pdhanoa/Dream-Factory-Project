@@ -11,7 +11,8 @@ img {
   width: 100%;
   /* position: fixed; */
   background-color: white;
-  height: 17%;
+  height: 13%;
+  padding-bottom: 20px;
   box-sizing: content-box;
   overflow: hidden;
   display: grid;
