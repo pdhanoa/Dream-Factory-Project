@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF2A3;
+
+}
+
+ p {
+
+  color: black;   
+ }
+
+.page {
+  height: 1000px;
+  /* padding-left: 7px; */
+  display: grid;
+  grid-template-rows: [header] 100px [content1] 1fr [content2] 1fr;
+  grid-template-columns: [left-gutter] 1fr [maincontent] 10fr [right-gutter] 1fr;
+  /* grid-gap: 1rem; */
+  background-color: #FFF2A3;
+}
+
+.mainEvent {
+  grid-row: content1;
+  grid-column: maincontent;
+  align-self: center;
+  justify-self: center;
+  margin-top: 84px;
+  margin-bottom: 72px;
+  display: grid;
+  grid-template-columns: [image] 800px [text] 1fr;
+
+  position: relative;
+}
+
+
+
+.prevEvent {
+  grid-row: content2;
+  grid-column: maincontent;
+}
+
+
+
+.slideshow {
+  max-width: 800px;
+  height: auto;
+
+  grid-column: image;
+  place-self: center right;
+}
+
+
+.prevEvent h1 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.text {
+  grid-column: text;
+  padding: 20px;
+  background-color: #fafafa;
+  place-self: center start;
+  min-height: 400px;
+  height: 100%;
+  width: auto;
+  max-width: 400px;
+
+}
+
+.text * {
+  margin-top: 0px;
+}
+
+.text h1 {
+  margin-bottom: 0px;
+}
+
+.text .bar {
+  margin-bottom: 32px;
+}
+
+.special-button {
+  color: #000000;
+  border-color: #707070;
+  margin-left: 0px;
+  margin-top: 16px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 40px;
+  right: 500px;
+}
+
+.dot:hover, .dot:focus {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.active {
+  background-color: #fafafa;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.cards .card {
+  width: 360px;
+  height: auto;
+  padding: 20px;
+  margin: 15px;
+  margin-top:30px;
+  /* border: 1px solid red; */
+  background-color: #fafafa;
+}
+
+.card .bar {
+  width: 15%;
+  border: 1px solid #FFDA00;
+}
+
+.card > h2 {
+  margin-bottom: 0px;
+}
+
+.card img {
+  width: 100%;
+
+  height: auto;
+}
+
+@media only screen and (max-width: 1450px)  {
+  #card_col_3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+}
+
+@media only screen and (max-width: 1200px)  {
+
+
+  .text {
+    width: 100%;
+    max-width: 100%;
+    grid-column: image;
+    grid-row: 2;
+    z-index: 9;
+  }
+
+
+  .dots {
+    bottom: 450px;
+    right: 100px;
+  }
+
+
+  #logo {
+    margin-right: 40px;
+  }
+
+
+
+}
