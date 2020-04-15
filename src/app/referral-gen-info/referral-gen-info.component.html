@@ -1,78 +1,129 @@
-
-
+<div id = "foreground">
 <form [formGroup] = "myForm">
-
-  <h2>Child Referral Form</h2>
-
-  Child's Name<br>
-  <input type = "text" name = "firstname" placeholder = "First Name">
-  <input type = "text" name = "lastname" placeholder = "Last Name">
-
-
-  <p></p>
-  Child's Birthday<br>
-  <input type = "date" name = "birthday">
-
-
-  <p></p>
-  Child's Address<br>
-  <input type = "text" name = "addressC" placeholder = "Street Address"><br>
-
-
-  <select name="Countries">
-    <option value="volvo">United States</option>
-    <option value="saab">Canada</option>
-    <option value="fiat">Mexico</option>
-  </select><br>
-
-  <input type = "number" name = "zip" placeholder = "Zipcode"><br>
-  <input type = "text" name = "city" placeholder = "City"><br>
-  <input type = "text" name = "state" placeholder = "State"><br>
-  <input type = "tel" name ="numberC" placeholder = "Child's Phone Number">
-
-  <p></p>
-  Father<br>
-  <input type = "text" name = "fatherFirstName" placeholder = "First Name"><br>
+  
+    <h2 id = "formTitle">Child Referral Form</h2>
+   <div id = "formback">
+    <pre class = "before">Child's Name</pre>
+    <input type = "text" name = "firstname" placeholder = "John" class = "names">
+   <input type = "text" name = "lastname" placeholder = "Doe" class = "names">
+   <pre>First Name                                             Last Name</pre>
+   <pre class = "before">Date of Birth                     Gender</pre>
+    <input type = "date" name = "birthday" placeholder = "Date of Birth" id = "birthday">
+    <input type = "checkbox" name = "male">
+    <input type = "checkbox" name = "female">
+    <input type = "checkbox" name = "other">
+    <input type = "text" name = "specifyOther">
+    <pre>Birthday                                               Male     Female  Unspecified</pre>
+    <!-- might want to change this to month, day and year in individual boxes-->
+    <pre class = "before">Parent/Guardian 1</pre>
+     <input type = "text" name = "firstname" placeholder = "John" class = "names">
+   <input type = "text" name = "lastname" placeholder = "Doe" class = "names">
+   <pre>First Name                                             Last Name</pre>
+    <input type = "tel" name ="numberC" placeholder = "(999) 999-9999">
+    <input type = "tel" name = "numberW" placeholder = "(999) 999-9999"><br>
+   <pre>Cell Phone Number                  Work Phone Number</pre>
+  <pre class = "before">Parent/Guardian 2</pre>
+  <input type = "text" name = "firstnamep2" placeholder = "John" class = "names">
+   <input type = "text" name = "lastnamep2" placeholder = "Doe" class = "names">
+   <pre>First Name                                             Last Name</pre>
+    <input type = "tel" name ="numberCp2" placeholder = "(999) 999-9999">
+    <input type = "tel" name = "numberWp2" placeholder = "(999) 999-9999"><br>
+   <pre>Cell Phone Number                  Work Phone Number</pre>
+   <pre class = "before">Sibling(s) Name(s)</pre>
+   <input type = "text" name = "siblingname">
+   <input type = "number" name = "age"> 
+   <pre> Name                                     Age</pre>
+  </div>
+  <!--
+   <input type = "tel" name ="numberC" placeholder = "(999) 999-9999"><br>
+   <pre>Phone Number</pre>
+   <input type = "text" name = "addressC" placeholder = "1234 Main Street"><br>
+   <pre>Street Address</pre>
+   <input type = "text" name = "city" placeholder = "St. Louis">
+   <input type = "text" name = "state" placeholder = "Missouri"><br>
+   <pre>City                                               State</pre>
+   <input type = "number" name = "zip" placeholder = "11111"><br>
+   <pre>Zipcode</pre>
+   <select name="Countries" id = "countries">
+      <option value="volvo">United States</option>
+     <option value="saab">Canada</option>
+     <option value="fiat">Mexico</option>
+    </select><br>
+     <pre>Country</pre>
+  </div>-->
+<!--
+  <div id="p1">
+  <br>
+  Parent or Guardian 1<br>
+  <input type = "text" name = "fatherFirstName" placeholder = "First Name">
   <input type = "text" name = "fatherLastName" placeholder = "Last Name"><br>
-  <input type = "tel" name = "numberF" placeholder = "Father's Phone Number">
+   <pre>First Name                                    Last Name</pre>
+  <input type = "tel" name = "numberF" placeholder = "Phone Number">
+  <pre>Phone Number</pre>
+  </div>
 
-  <p></p>
-  Mother<br>
-  <input type = "text" name = "momFirstName" placeholder = "First Name"><br>
+  <div id="p2">
+  <br>
+  Parent or Guardian 2<br>
+  <input type = "text" name = "momFirstName" placeholder = "First Name">
   <input type = "text" name = "momLastName" placeholder = "Last Name"><br>
-  <input type = "tel" name = "numberM" placeholder = "Mother's Phone Number">
+  <pre>First Name                                    Last Name</pre>
+  <input type = "tel" name = "numberM" placeholder = "Phone Number">
+  <pre>Phone Number</pre>
+  </div>
 
-  <p></p>
+  <div class="condition">
+  <br>
   Child's Condition<br>
-  <select name="Condition">
+  <select name="Condition" id = "conditions">
     <option value="volvo">Condition 1</option>
     <option value="saab">Condition 2</option>
     <option value="fiat">Condition 3</option>
   </select><br>
-
-  <p></p>
+  -->
+<!-->/div-->
+<!--
+  <div id="dream">
+  <br>
   Child's Dream<br>
-  <input type = "text" name = "childDream" placeholder = "Enter your Child's dream" id = "childDream">
+  <input type = "text" name = "childDream" placeholder = "Description" id = "childDream">
+  </div>
 
-
-  <p></p>
+  <div id="referrer">
+  <br>
   Referrer<br>
-  <input type = "text" name = "referrerFirstName" placeholder = "First Name"><br>
+  <input type = "text" name = "referrerFirstName" placeholder = "First Name">
   <input type = "text" name = "referrerLastName" placeholder = "Last Name"><br>
-  <input type = "tel" name = "numberR" placeholder = "Referrer's Phone Number">
+   <pre>First Name                                    Last Name</pre>
+  <input type = "tel" name = "numberR" placeholder = "Phone Number">
+    <pre>Phone Number</pre>
+  </div>
 
-  <p></p>
+  <div id="physician">
+  <br>
   Physician<br>
-  <input type = "text" name = "physicianFirstName" placeholder = "First Name"><br>
+  <input type = "text" name = "physicianFirstName" placeholder = "First Name">
   <input type = "text" name = "physicianLastName" placeholder = "Last Name"><br>
-  <input type = "tel" name = "numberP" placeholder = "Physician's Phone Number">
+   <pre>First Name                                    Last Name</pre>
+  <input type = "tel" name = "numberP" placeholder = "Phone Number">
+  <pre>Phone Number</pre>
+  </div>
 
-  <p></p>
+  <div id="social">
+  <br>
   Social Worker<br>
-  <input type = "text" name = "socialFirstName" placeholder = "First Name"><br>
+  <input type = "text" name = "socialFirstName" placeholder = "First Name">
   <input type = "text" name = "socialLastName" placeholder = "Last Name"><br>
-  <input type = "tel" name = "numberS" placeholder = "Social Worker's Phone Number" id = "sPhone">
+    <pre>First Name                                    Last Name</pre>
+  <input type = "tel" name = "numberS" placeholder = "Phone Number" id = "sPhone">
 
-
-  <p></p>
+  <pre>Phone Number</pre>
+  </div>
+  <div id="button">
+  <br>
   <button>Submit</button>
+  </div>
+  </div>
+  -->
+  
+  

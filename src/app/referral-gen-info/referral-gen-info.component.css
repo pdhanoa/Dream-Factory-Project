@@ -1,3 +1,59 @@
 * {
-  background-color: blue;
+  background-color: rgb(59, 211, 203);
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
+#foreground{
+  background-color: rgba(255,255,255, 1);
+  
+
+}
+
+#formback {
+  
+  color: rgb(59, 211, 203);
+}
+pre{
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.before{
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+
+
+#formTitle{
+
+}
+input[type = text], input[type = value], input[type = date], input[type = tel], input[type = number], input[type = checkbox]{
+  border-color: gray;
+  border: rounded;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+input[type = date]
+{
+  margin-right: 30px
+}
+input[type = checkbox]{
+  margin-left:25px;
+  margin-right: 1px;
+}
+h2{
+  padding-top: 120px;
+  padding-left: 20px;
+  font-size: 35px;
+  color: white
+}
+.names{
+  padding-left: 20px;
+  color: black;
+}
+
+pre {
+  color: black;
 }

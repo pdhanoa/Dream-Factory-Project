@@ -9,6 +9,7 @@ h1 {
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
 }
 
 #referralcheck {
@@ -21,8 +22,9 @@ label {
 }
 
 #qualifications {
-  background-color: purple;
-  padding: 15px;
+  background-color: rgb(59, 211, 203);
+  padding-top: 70px;
+  padding-left:20px;
   font-size: 20px;
   line-height: 2.0;
   color: white;
