@@ -3,10 +3,11 @@
   src: 'https://fonts.googleapis.com/css?family=Poppins' format("opentype");
 }
 
-* {
+body {
   box-sizing: border-box;
   color: black;
   font-family: "Poppins", Arial;
+  background-color: rgb(255, 242, 134);
 }
 
 .form-container {
