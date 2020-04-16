@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Poppins;
+  src: 'https://fonts.googleapis.com/css?family=Poppins' format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  color: black;
+  font-family: "Poppins", Arial;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: white;
+}
+
+/* input fields*/
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=number], .form-container input[type=email], .form-container textarea {
+  min-width: 200px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid;
+  background: white;
+}
+.form-container input[type=tel]{
+  min-width: 110px;
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid;
+  background: white;
+}
+/* input focus */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=number]:focus, .form-container input[type=tel]:focus, .form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/*form bttns*/
+.form-container .btn-sbmt {
+  background-color: rgb(232,19,72);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 25%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+/*
+
+#dFLogo{
+	height: 50px;
+	width: 100px;
+}
+.bar{
+	float: right;
+	display: inline;
+}
+
+*/
+
+.who-text,.contact-text{
+	margin-left:5%;
+  min-width: 50%;
+}
+.who-text{
+	max-width: 47%;
+}
+.contact-text{
+	max-width: 20%;
+}
+.middle-text{
+	text-align: center;
+	margin-top: 45%;
+  
+}
+.image-div{
+	max-height: 20%;
+}
+.image{
+	max-height: 50%;
+	width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.contact-text,.q-form{
+	display: inline-block;
+}
+.q-form{
+	margin-left: 55%;
+}
+/*
+.q-form{
+	position: relative;
+	margin-left: 55%;
+}
+
+.q-form:before, 
+.q-form:after { 
+	content: " "; display: table; 
+}
+
+.col {
+	float: left;
+}
+
+.lastName, .firstName{
+	max-width: 40%;
+}
+*/
+#image-text{
+  color: white;
+}
+#mid-text{
+  color: rgb(3,219,252);
+  font-size: 110%;
+}
+.form-container .btn-sbmt:hover {
+  opacity: 1;
+}
+.img-text{
+	font-size: 2vw;
+	margin-top: -50%;
+	margin-left: 10%;
+}

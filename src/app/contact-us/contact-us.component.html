@@ -1,1 +1,91 @@
-<h1>Hey this works!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="about-us.component.css">
+<title>Dream Factory of St. Louis</title>
+
+</head>
+<body>
+  <!--
+<img src="dreamFactoryLogo.jpg" alt="Dream Factory Logo" id="dFLogo">
+<div class="bar">
+<button onclick="window.location.href = 'https://w3docs.com';">Home</button>
+<button onclick="window.location.href = 'https://w3docs.com';">About Us</button>
+<button onclick="window.location.href = 'https://w3docs.com';">Want to Help?</button>
+<button onclick="window.location.href = 'https://w3docs.com';">Events</button>
+<button onclick="window.location.href = 'https://w3docs.com';">Contact Us</button>
+<button onclick="window.location.href = 'https://w3docs.com';">Donate</button>
+</div>
+-->
+
+<div class="image-div">
+<img class="image" src="https://www.hdwallpaperslife.com/wp-content/uploads/2018/07/sunset_happy_child_silhouette_4k.jpg" alt="Kid Jumping">
+</div>
+
+<!--<img src="https://i.ytimg.com/vi/8U758F1uLdc/maxresdefault.jpg">-->
+
+<div class="img-text">
+<strong id="image-text">Granting hopeful children<br/>with critical illnesses their<br/>wishes.</strong>
+</div>
+
+<div class="middle-text">
+<p id="mid-text">After being founded in 1983,<br/>the Dream Factory of St. Louis has granted<br/>over 2000 dreams.</p>
+</div>
+
+
+<div class="who-text">
+<h2>Who we are</h2>
+<p>As children, we are all big dreamers. We've all had wishes we hope to be granted from visiting DisneyLand to meeting our heroes. At some point, if we're fortunate enough, we get our wishes granted. However, for children who struggle with critical or chronic illnesses, the road may be too short or difficult for them to see their dreams come true. Our mission is to grant hopeful children with critical illnesses their wishes so that we can bring a little ray of light and hope into their lives.</p>
+</div>
+
+
+<div class="contact-text">
+<h2>Contact</h2>
+<p>We would love to hear from you!<br/>Please fill out this form and we will get in touch with you shortly</p>
+</div>
+
+
+<div class="q-form">
+
+<form action="/action_page.php" class="form-container" [formGroup]="form">
+  <div class="col">
+	<div class="firstName">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" placeholder="First Name"><br>
+	</div>
+	
+  <div class="col">
+	<div class="lastName">
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+	</div>
+  </div>
+  <label for="phone">Phone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" placeholder="youremail@example.com"><br>
+  <label for="msg">Question/Comment:</label><br>
+  <textarea name="msg" rows="8" cols="50" placeholder="Your message here"></textarea>
+  </div>
+  
+  
+  <input type="submit" value="Submit" method="post" class="btn-sbmt">
+</form> 
+</div>
+
+<!--
+<script>
+function openForm() {
+  document.getElementById("whole").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("whole").style.display = "none";
+}
+</script>
+-->
+
+</body>
+</html>
