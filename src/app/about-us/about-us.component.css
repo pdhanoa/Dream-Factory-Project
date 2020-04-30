@@ -5,51 +5,34 @@
 
 body {
   box-sizing: border-box;
-  color: black;
   font-family: "Poppins", Arial;
   background-color: rgb(255, 242, 134);
 }
 
-.form-container {
-  padding: 20px;
-  background-color: white;
+p{
+    color: black;
+
 }
 
-/* input fields*/
-.form-container input[type=text], .form-container input[type=password], .form-container input[type=number], .form-container input[type=email], .form-container textarea {
-  min-width: 200px;
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: 1px solid;
-  background: white;
+#missionStatement {
+ margin-top: 35%;
 }
-.form-container input[type=tel]{
-  min-width: 110px;
-  width: 40%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: 1px solid;
-  background: white;
+
+.aboutbox{
+  background-color: white;
+  padding: 50px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  align-content: center;
 }
-/* input focus */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=number]:focus, .form-container input[type=tel]:focus, .form-container input[type=email]:focus {
-  background-color: #ddd;
-  outline: none;
+
+.minibox {
+    padding-left: 20px;
+    border-left:2px solid #FFDA00;
 }
 
 /*form bttns*/
-.form-container .btn-sbmt {
-  background-color: rgb(232,19,72);
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  min-width: 25%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
 
 #ontoptext {
   width: 300px;
@@ -86,6 +69,7 @@ body {
 }
 .image-div{
 	max-height: 20%;
+  margin-bottom: 25px;
 }
 .image{
 	max-height: 50%;
