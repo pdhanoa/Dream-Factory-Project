@@ -1,13 +1,24 @@
-      <div class = "navbar">
-         <a id =  "home" href = "" class = "image" routerLink = "">
+      <nav class = "navbar">
+        <div clas = "dreamfactorylogo">
+          <a id =  "home" href = "" class = "image" routerLink = "">
         <img id = "logo" src = "https://i.imgur.com/lRNNJFE.png" />
-        </a>
-        <div class="links">
-        <a id =  "about" href = "#About" routerLink = "/about">About</a>
-        <a id =  "events" href = "#Events" routerLink = "/events">Events</a>
-        <a id =  "contact" href = "#Contact" routerLink = "/contactus">Contact Us</a>
-        <a id =  "volunteer" href = "">Volunteer</a>
-        <a id =  "child" href = "#" routerLink = "waystohelp/referral">Refer a Child</a>
-        <button id =  "donate" class =  "button" href = "#Donate" routerLink = "/waystohelp/donation">Donate</button>
+          </a>
         </div>
-    </div>
+
+        <a href= "#" id= "toggle-button" class = "toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a id =  "about" href = "#About" routerLink = "/about">About</a></li>
+            <li><a id =  "events" href = "#Events" routerLink = "/events">Events</a></li>
+            <li><a id =  "contact" href = "#Contact" routerLink = "/contactus">Contact Us</a></li>
+            <li><a id =  "volunteer" href = "">Volunteer</a></li>
+            <li><a id =  "child" href = "#" routerLink = "waystohelp/referral">Refer a Child</a></li>
+            <li><button id =  "donate" class =  "button" href = "#Donate" routerLink = "/waystohelp/donation">Donate</button></li>
+          </ul>
+          
+        </div>
+    </nav>
